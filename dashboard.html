@@ -78,10 +78,34 @@
             <div id="categories-view" class="hidden">
                 <div class="flex justify-between items-center mb-6">
                     <h3 class="text-lg font-medium text-gray-600">Manage product categories</h3>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700"> + Add Category </button>
+                    <button id="add-category-btn" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 shadow-md transition"> + Add Category </button>
                 </div>
-                <div class="bg-white p-10 text-center rounded-xl shadow-sm border border-gray-200">
-                    <p class="text-gray-500">Categories table will load here...</p>
+                
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-600 border-b border-gray-200">
+                                <th class="p-4 font-semibold">Category Name</th>
+                                <th class="p-4 font-semibold text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="categories-tbody" class="divide-y divide-gray-200">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="category-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                <div class="bg-white p-6 rounded-xl w-96 shadow-2xl">
+                    <h2 class="text-xl font-bold mb-4">Add New Category</h2>
+                    <form id="category-form">
+                        <input type="text" id="cat-name" placeholder="Category Name (e.g. Laptops)" class="w-full mb-5 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+                        
+                        <div class="flex justify-end space-x-3">
+                            <button type="button" id="close-cat-modal-btn" class="px-4 py-2 text-gray-600 bg-gray-200 rounded-lg hover:bg-gray-300 font-medium transition">Cancel</button>
+                            <button type="submit" class="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 font-medium transition">Save</button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
