@@ -3,7 +3,7 @@
 A fully functional e-commerce admin dashboard built with **Vanilla JavaScript**, **Tailwind CSS**, and **Firebase**.
 
 ## 🚀 Live Demo
-https://muhammad-ajmal-khan.github.io/Bq-Store-Admin/dashboard.html
+https://muhammad-ajmal-khan.github.io/Bq-Store-Admin/index.html
 
 ## 🎨 Figma Design
 https://www.figma.com/design/MJY5Frw5P3lumJUvogkePl/bano-qabil-project?node-id=0-1&t=V54vxcSxaM0t3Msd-1
